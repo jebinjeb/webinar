@@ -22,7 +22,7 @@ func registrationHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	// Set up a registration handler
+	// Set up a registration handler //
 	http.HandleFunc("/register", registrationHandler)
 
 	// Start the web server on port 8080
