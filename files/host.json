@@ -1,0 +1,116 @@
+{
+    "apiVersion": "v1",
+    "kind": "Node",
+    "metadata": {
+        "timestamp": "1706485855",
+        "description": "Represents configuration for Node",
+        "uid": "001",
+        "status": {
+            "curr_st": "init",
+            "desired_st": "init",
+            "secrets": false,
+            "readiness": "unknown",
+            "liveness": 0
+        }
+    },
+    "spec": {
+        "metadata": {
+            "cluster": "cluster 1",
+            "total_hosts": 20
+        },
+        "hosts": [
+            {
+                "hostname": "Host_1",
+                "ipaddress": "1111:1111:2222:222:2222",
+                "network": {
+                    "devices": [
+                        {
+                            "name": "sriov0",
+                            "driver": {
+                                "version": "1.19.0"
+                            },
+                            "hardware": {
+                                "vf_count": 32,
+                                "firmware": "1.19.2"
+                            }
+                        }
+                    ]
+                },
+                "cpu": {},
+                "memory": {},
+                "os": {
+                    "time_protocol": [
+                        {
+                            "server": "1111:1111:2222:222:2222",
+                            "status": "Running",
+                            "protocol": "NTP",
+                            "time_drift": "0.00002"
+                        }
+                    ],
+                    "dns": [
+                        {
+                            "location": "CDC1",
+                            "ip": "1111:1111:2222:222:2222"
+                        }
+                    ]
+                },
+                "disk": {},
+                "bmc": {
+                    "metadata": {},
+                    "inventory": {
+                        "power": [],
+                        "nics": [],
+                        "ssd": [],
+                        "bios": {}
+                    }
+                }
+            },
+            {
+                "hostname": "host 2",
+                "ipaddress": "1111:1111:1111:2222:2222:2222",
+                "network": {
+                    "devices": [
+                        {
+                            "name": "sriov1",
+                            "driver": {
+                                "version": "1.19.0"
+                            },
+                            "hardware": {
+                                "vf_count": 32,
+                                "firmware": "1.19.2"
+                            }
+                        }
+                    ]
+                },
+                "cpu": {},
+                "memory": {},
+                "os": {
+                    "time_protocol": [
+                        {
+                            "server": "1111:1111:1111:2222:2222:2222",
+                            "status": "Running",
+                            "protocol": "NTP",
+                            "time_drift": "0.00002"
+                        }
+                    ],
+                    "dns": [
+                        {
+                            "location": "CDC1",
+                            "ip": "1111:1111:1111:2222:2222:2222"
+                        }
+                    ]
+                },
+                "disk": {},
+                "bmc": {
+                    "metadata": {},
+                    "inventory": {
+                        "power": [],
+                        "nics": [],
+                        "ssd": [],
+                        "bios": {}
+                    }
+                }
+            }
+        ]
+    }
+}
